@@ -13,17 +13,17 @@
                 Événement Privé
               </span>
             </h2>
-            
+
             <p class="text-lg font-light leading-relaxed animate-text lg:text-xl">
-              Au Petit Paris, nous comprenons l'importance d'organiser un événement 
-              mémorable. Notre équipe dédiée vous accompagne dans la création de moments 
-              uniques, qu'il s'agisse d'un dîner intime, d'une célébration d'entreprise 
+              Au Petit Paris, nous comprenons l'importance d'organiser un événement
+              mémorable. Notre équipe dédiée vous accompagne dans la création de moments
+              uniques, qu'il s'agisse d'un dîner intime, d'une célébration d'entreprise
               ou d'une occasion spéciale.
             </p>
-  
+
             <p class="text-lg font-light leading-relaxed animate-text lg:text-xl">
-              Notre espace élégant, notre cuisine raffinée et notre service attentionné 
-              s'unissent pour créer une expérience inoubliable. Laissez-nous transformer 
+              Notre espace élégant, notre cuisine raffinée et notre service attentionné
+              s'unissent pour créer une expérience inoubliable. Laissez-nous transformer
               votre vision en réalité dans notre cadre parisien enchanteur.
             </p>
            <router-link to="/reservation">
@@ -32,12 +32,12 @@
             </button>
           </router-link>
           </div>
-  
+
           <!-- Colonne de droite - Image -->
           <div class="relative animate-image">
             <div class="relative h-[600px] overflow-hidden">
-              <img 
-                src="/images/event-space.jpg" 
+              <img
+                src="/images/event-space.jpg"
                 alt="Espace événementiel du Petit Paris"
                 class="object-cover w-full h-full"
               />
@@ -51,12 +51,12 @@
       </div>
     </section>
   </template>
-  
+
   <style scoped>
   .font-script {
     font-family: 'Dancing Script', cursive;
   }
-  
+
   /* Effet de particules/bokeh */
   .animate-image::before {
     content: '';
@@ -67,9 +67,9 @@
     filter: blur(100px);
     animation: pulse 4s ease-in-out infinite;
   }
-  
+
   @keyframes pulse {
     0%, 100% { transform: scale(1); opacity: 0.1; }
     50% { transform: scale(1.1); opacity: 0.2; }
   }
-  </style> 
+  </style>

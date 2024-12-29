@@ -6,6 +6,7 @@ import FooterSection from '@/components/FooterSection.vue'
 </script>
 
 <template>
+  <div class="custom-cursor"></div>
    <NavBar />
 
   <RouterView />

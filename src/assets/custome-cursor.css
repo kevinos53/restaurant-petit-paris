@@ -1,0 +1,20 @@
+.custom-cursor {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    width: 20px;
+    height: 20px;
+    background-color: #C17D5B;
+    border-radius: 50%;
+    mix-blend-mode: difference; /* Invert color on dark background */
+    transition: transform 0.2s ease-out; /* Smooth animation */
+    opacity: 0; /* Hide initially, will be animated by js */
+    transform: translate(-50%, -50%); /* Position based on center of cursor */
+}
+.custom-cursor.active {
+    opacity: 1;
+}
+.custom-cursor.hover {
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: #cc7347; /* Make it solid on hover */
+}
