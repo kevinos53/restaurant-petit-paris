@@ -44,7 +44,7 @@ const setCardRef = (el: HTMLElement | null, index: number) => {
 </script>
 
 <template>
-  <section class="relative h-screen" style="margin-top: 95px;">
+  <section class="relative h-screen bg-[#2D1810]" style="margin-top: 95px;">
     <!-- Section des cartes de menu -->
     <div class="grid h-full grid-cols-1 md:grid-cols-3">
       <!-- Carte Food -->

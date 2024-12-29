@@ -12,8 +12,6 @@ import GiftVoucherSection from '@/components/GiftVoucherSection.vue'
 
 <template>
   <main class="min-h-screen">
-
-
     <HeroSection />
     <FoodSection />
     <MolecularSection  />
@@ -23,7 +21,5 @@ import GiftVoucherSection from '@/components/GiftVoucherSection.vue'
     <TestimonialSection />
     <EventSection />
     <GiftVoucherSection />
-  
-
   </main>
 </template>

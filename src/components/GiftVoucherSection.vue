@@ -1,40 +1,42 @@
 
 <template>
-  <section class="relative bg-[#1A1A1A] min-h-screen">
+
+  <section class="relative bg-[#1A1A1A] min-h-screen px-6 sm:px-10 md:px-0 py-12 md:py-0">
     <!-- Contenu principal -->
-    <div class="ml-4">
-      <div class="grid items-center grid-cols-1 gap-16 lg:grid-cols-2">
+    <div class="w-full">
+      <div class="grid items-center grid-cols-1 gap-12 md:gap-16 lg:grid-cols-2">
         <!-- Colonne de gauche - Image -->
-        <div ref="imageSection" class="relative">
-          <img
-            src="/images/restaurant-facade.jpg"
-            alt="Façade du restaurant"
-            class="object-cover w-full h-full brightness-110 contrast-105"
-          />
-          <!-- Overlay pour adoucir l'image avec plus de transparence -->
-          <div class="absolute inset-0 bg-gradient-to-r from-[#1A1A1A]/60 to-transparent"></div>
+        <div ref="imageSection" class="relative order-last md:order-first">
+          <div
+            class="relative aspect-w-16 aspect-h-9 md:aspect-h-6 lg:aspect-h-9 overflow-hidden group"
+          >
+            <img
+              src="/images/restaurant-facade.jpg"
+              alt="Façade du restaurant"
+              class="object-cover w-full h-full transition-transform duration-500 ease-in-out transform group-hover:scale-110 brightness-110 contrast-105"
+            />
+            <!-- Overlay pour adoucir l'image avec plus de transparence -->
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-orange-500/20 mix-blend-overlay"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          </div>
         </div>
 
         <!-- Colonne de droite - Texte -->
-        <div ref="textSection" class="flex flex-col justify-center p-12 lg:p-20 text-white space-y-8">
+        <div ref="textSection" class="space-y-6 md:space-y-8 text-white pl-0 md:pl-6 order-last md:order-first">
           <div>
-            <h2 class="">
-              <span class="block text-5xl font-light leading-tight lg:text-6xl">
-                Offrez un Moment d'Exception avec Nos
-              </span>
-              <span class="block mt-2 text-6xl font-script text-[#C17D5B] lg:text-7xl">
-                Cartes Cadeaux
-              </span>
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-light leading-tight">
+              <span class="block">Offrez un Moment d'Exception avec Nos</span>
+              <span class="block mt-2 font-script text-[#C17D5B]">Cartes Cadeaux</span>
             </h2>
 
-            <p class="text-lg font-light leading-relaxed lg:text-xl">
+            <p class="text-lg sm:text-xl font-light leading-relaxed">
               Offrez une expérience gastronomique inoubliable à vos proches. Avec nos trois
               formules de cartes cadeaux à différents prix, permettez à vos êtres chers de
               découvrir notre brunch raffiné ou de savourer une authentique cuisine française
               dans l'un des meilleurs restaurants gastronomiques de la région.
             </p>
 
-            <p class="text-lg font-light leading-relaxed lg:text-xl">
+            <p class="text-lg sm:text-xl font-light leading-relaxed">
               Vous pouvez également offrir à vos amis et votre famille notre masterclass cocktails.
               Nous proposons deux formules distinctes, comprenant chacune un cocktail de bienvenue
               et la création de trois cocktails signatures. L'une des formules inclut également
@@ -42,7 +44,7 @@
             </p>
             <router-link to="/menu">
               <button
-                class="inline-block px-12 py-3 text-lg tracking-wider transition-all duration-300 border-2 border-white hover:bg-white hover:text-black"
+                class="px-8 sm:px-12 py-2 sm:py-3 text-base sm:text-lg tracking-wider transition-all duration-300 border-2 border-white hover:bg-white hover:text-black"
               >
                 ACHETER UNE CARTE CADEAU
               </button>

@@ -1,30 +1,30 @@
 
 <template>
-  <section ref="molecularSection" class="relative bg-[#1A1A1A] min-h-screen">
-    <!-- Contenu principal -->
-    <div class="grid min-h-screen grid-cols-1 lg:grid-cols-2">
-      <!-- Colonne de gauche - Image -->
-      <div class="relative animate-image">
-        <div class="h-full group">
-          <img
-            src="/images/cocktail-fire.jpg"
-            alt="Cocktail flambé"
-            class="relative object-cover w-full h-full transition-transform duration-1000 ease-in-out transform group-hover:scale-105 group-hover:rotate-3 group-hover:skew-y-1"
-          />
-          <!-- Overlay pour l'effet de flamme -->
-          <div class="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] via-transparent to-transparent opacity-80"></div>
-          <div class="flame-overlay"></div>
+  <section class="relative bg-[#1A1A1A] min-h-screen px-6 sm:px-10 md:px-0 py-12 md:py-0">
+    <div class="w-full">
+      <!-- Contenu principal -->
+      <div class="grid items-center grid-cols-1 gap-12 md:gap-16 lg:grid-cols-2">
+        <!-- Colonne de gauche - Image -->
+        <div class="relative animate-image">
+          <div class="relative aspect-w-16 aspect-h-9 md:aspect-h-6 lg:aspect-h-9 overflow-hidden group">
+            <img
+              src="/images/cocktail-fire.jpg"
+              alt="Cocktail flambé"
+              class="object-cover w-full h-full transition-transform duration-1000 ease-in-out transform group-hover:scale-105 group-hover:rotate-3 group-hover:skew-y-1"
+            />
+            <!-- Overlay pour l'effet de flamme -->
+            <div class="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] via-transparent to-transparent opacity-80"></div>
+            <div class="flame-overlay"></div>
+          </div>
         </div>
-      </div>
-      <!-- Colonne de droite - Texte -->
-      <div class="flex flex-col justify-center p-12 lg:p-20">
-        <div class="max-w-2xl space-y-8 text-white">
-          <h2 class="text-5xl font-light leading-tight animate-text lg:text-6xl">
+        <!-- Colonne de droite - Texte -->
+        <div class="space-y-6 md:space-y-8 text-white pl-0 md:pl-6">
+          <h2 class="text-4xl sm:text-5xl md:text-6xl font-light leading-tight animate-text">
             Notre Cuisine <br>
             <span class="font-script text-[#C17D5B]">Moléculaire</span>
           </h2>
 
-          <p class="text-lg font-light leading-relaxed animate-text lg:text-xl">
+          <p class="text-lg sm:text-xl font-light leading-relaxed animate-text">
             Le Petit Paris vous propose un concept unique en son genre, où nous excellons dans l'aventure culinaire
             et nous délectons de l'extraordinaire. Dévoués à faire progresser l'art et la pratique de l'hospitalité,
             nous nous engageons à offrir une expérience véritablement unique, permettant à chaque visiteur de découvrir
@@ -32,7 +32,7 @@
             accueillir très prochainement dans notre établissement.
           </p>
           <router-link to="/menu">
-            <button class="inline-block px-12 py-3 text-lg tracking-wider transition-all duration-300 border-2 border-white animate-text hover:bg-white hover:text-black opacity-none">
+            <button class="inline-block px-8 sm:px-12 py-2 sm:py-3 text-base sm:text-lg tracking-wider transition-all duration-300 border-2 border-white animate-text hover:bg-white hover:text-black">
               DÉCOUVRIR
             </button>
           </router-link>

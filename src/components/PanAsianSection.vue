@@ -1,34 +1,30 @@
 
 <template>
-  <section class="relative bg-[#1A1A1A] min-h-screen">
-    <div class="ml-4">
+  <section class="relative bg-[#1A1A1A] min-h-screen px-6 sm:px-10 md:px-0 py-12 md:py-0">
+    <div class="w-full">
       <!-- Contenu principal -->
-      <div class="grid items-center grid-cols-1 gap-16 lg:grid-cols-2">
+      <div class="grid items-center grid-cols-1 gap-12 md:gap-16 lg:grid-cols-2">
         <!-- Colonne de gauche - Texte -->
-        <div ref="textColumn" class="space-y-8 text-white">
-          <h2>
-            <span class="block text-5xl font-light leading-tight lg:text-6xl">
-              Une Cuisine Pour Tous
-            </span>
-            <span class="block mt-2 text-6xl font-script text-[#C17D5B] lg:text-7xl">
-              Gastronomie Française
-            </span>
+        <div ref="textColumn" class="space-y-6 md:space-y-8 text-white pl-0 md:pl-6">
+          <h2 class="text-4xl sm:text-5xl md:text-6xl font-light leading-tight">
+            <span class="block">Une Cuisine Pour Tous</span>
+            <span class="block mt-2 font-script text-[#C17D5B]">Gastronomie Française</span>
           </h2>
 
-          <p class="text-lg font-light leading-relaxed lg:text-xl">
+          <p class="text-lg sm:text-xl font-light leading-relaxed">
             Le Petit Paris est fier de vous proposer une cuisine française authentique et raffinée.
             Des amuse-bouches aux entrées, en passant par nos salades, plats principaux et desserts,
             notre menu saura satisfaire toutes les envies, quels que soient vos goûts ou votre appétit.
           </p>
 
-          <p class="text-lg font-light leading-relaxed lg:text-xl">
+          <p class="text-lg sm:text-xl font-light leading-relaxed">
             Avec notre sélection exceptionnelle et nos recettes traditionnelles, nous servons
             une des meilleures cuisines françaises de la région. Découvrez la gastronomie française
             comme elle se doit d'être savourée, au Petit Paris.
           </p>
 
           <button
-            class="inline-block px-12 py-3 text-lg tracking-wider transition-all duration-300 border-2 border-white hover:bg-white hover:text-black opacity-none"
+            class="px-8 sm:px-12 py-2 sm:py-3 text-base sm:text-lg tracking-wider transition-all duration-300 border-2 border-white hover:bg-white hover:text-black"
           >
             RÉSERVER
           </button>
@@ -36,11 +32,13 @@
 
         <!-- Colonne de droite - Image -->
         <div ref="imageColumn" class="relative">
-          <div class="relative h-[600px] overflow-hidden group">
+          <div
+            class="relative aspect-w-16 aspect-h-9 md:aspect-h-6 lg:aspect-h-9 overflow-hidden group"
+          >
             <img
               src="/images/coq-au-vin.jpg"
               alt="Coq au vin traditionnel"
-              class="h-full w-full object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+              class="object-cover w-full h-full transition-transform duration-500 ease-in-out transform group-hover:scale-110"
             />
             <!-- Effet de particules/bokeh -->
             <div

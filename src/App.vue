@@ -6,11 +6,13 @@ import FooterSection from '@/components/FooterSection.vue'
 </script>
 
 <template>
+  <div class="max-w-screen overflow-x-hidden">
   <div class="custom-cursor"></div>
    <NavBar />
 
   <RouterView />
   <FooterSection/>
+</div>
 </template>
 
 <style scoped>

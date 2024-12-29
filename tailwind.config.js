@@ -13,11 +13,15 @@ export default {
         'brand': {
           'copper': '#C17D5B',
           'dark': '#1A1A1A',
+
         },
         'primary':{
           DEFAULT:'#b45309',
 
 
+        },
+        'secondary': {
+          DEFAULT:"#2D1810",
         }
       }
     },
