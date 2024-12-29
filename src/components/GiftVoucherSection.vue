@@ -22,7 +22,7 @@
         </div>
 
         <!-- Colonne de droite - Texte -->
-        <div ref="textSection" class="space-y-6 md:space-y-8 text-white pl-0 md:pl-6 order-last md:order-first">
+        <div ref="textSection" class="space-y-6 md:space-y-8 text-white pl-0 md:pl-6 order-first md:order-last">
           <div>
             <h2 class="text-4xl sm:text-5xl md:text-6xl font-light leading-tight">
               <span class="block">Offrez un Moment d'Exception avec Nos</span>
