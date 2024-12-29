@@ -120,10 +120,10 @@
 </template>
 
 <script setup lang="ts">
-// Aucun script requis dans cette version
+import { ref } from 'vue';
 
 import { LMap, LTileLayer } from '@vue-leaflet/vue-leaflet'
-const zoom = 2
+const zoom = ref(2);
 </script>
 
 <style scoped>

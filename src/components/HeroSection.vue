@@ -48,7 +48,7 @@ const setCardRef = (el: HTMLElement | null, index: number) => {
     <!-- Section des cartes de menu -->
     <div class="grid h-full grid-cols-1 md:grid-cols-3">
       <!-- Carte Food -->
-      <div :ref="(el) => setCardRef(el, 0)" class="relative h-full cursor-pointer menu-card group">
+      <div :ref="(el) => setCardRef(el as HTMLElement, 0)" class="relative h-full cursor-pointer menu-card group">
         <div class="absolute inset-0">
           <img
             src="/images/food.jpg"
@@ -69,7 +69,7 @@ const setCardRef = (el: HTMLElement | null, index: number) => {
       </div>
 
       <!-- Carte Drinks -->
-      <div :ref="(el) => setCardRef(el, 1)" class="relative h-full cursor-pointer menu-card group">
+      <div :ref="(el) => setCardRef(el as HTMLElement, 1)" class="relative h-full cursor-pointer menu-card group">
         <div class="absolute inset-0">
           <img
             src="/images/drinks.jpg"
@@ -90,7 +90,7 @@ const setCardRef = (el: HTMLElement | null, index: number) => {
       </div>
 
       <!-- Carte Brunch -->
-      <div :ref="(el) => setCardRef(el, 2)" class="relative h-full cursor-pointer menu-card group">
+      <div :ref="(el) => setCardRef(el as HTMLElement, 2)" class="relative h-full cursor-pointer menu-card group">
         <div class="absolute inset-0">
           <img
             src="/images/brunch.jpg"
