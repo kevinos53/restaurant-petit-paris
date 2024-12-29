@@ -1,12 +1,19 @@
 <script setup lang="ts">
 import Reservation from '@/components/ReservationModal.vue'
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
 
+const route = useRoute()
 const isMenuOpen = ref(false)
 const isScrolled = ref(false)
 const lastScrollPosition = ref(0)
 const isNavVisible = ref(true)
 const showReservation = ref(false);
+
+// Fermer le menu lors du changement de route
+watch(() => route.path, () => {
+  isMenuOpen.value = false
+})
 
 const navItems = [
   { name: 'Accueil', href: '/' },
