@@ -21,20 +21,7 @@
               <div
                 class="w-12 h-12 bg-[#C17D5B] text-white flex items-center justify-center rounded-full"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M17.657 16.657L13 21m4.657-4.343A8 8 0 1112 4a8 8 0 017.657 12.657z"
-                  />
-                </svg>
+                <MapPinIcon class="w-6 h-6" />
               </div>
               <div class="ml-4">
                 <h3 class="text-lg font-semibold text-primary">Adresse</h3>
@@ -47,20 +34,7 @@
               <div
                 class="w-12 h-12 bg-[#C17D5B] text-white flex items-center justify-center rounded-full"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 5a2 2 0 012-2h3.586a1 1 0 01.707.293l2.414 2.414a1 1 0 010 1.414L8.414 10a1 1 0 01-1.414 0L5 8.414a1 1 0 00-1.707.707V19a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2H5z"
-                  />
-                </svg>
+                <PhoneIcon class="w-6 h-6" />
               </div>
               <div class="ml-4">
                 <h3 class="text-lg font-semibold text-primary">Téléphone</h3>
@@ -75,20 +49,7 @@
               <div
                 class="w-12 h-12 bg-[#C17D5B] text-white flex items-center justify-center rounded-full"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M16 12H8m0 0h8m-8 0V8m0 4v4m10-12H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2z"
-                  />
-                </svg>
+                <EnvelopeIcon class="w-6 h-6" />
               </div>
               <div class="ml-4">
                 <h3 class="text-lg font-semibold text-primary">E-mail</h3>
@@ -104,13 +65,7 @@
         <div class="overflow-hidden bg-[#2D2D2D] rounded-lg shadow-md">
           <div class="w-full h-64 md:w-1/2">
             <div class="w-full h-full">
-              <l-map ref="map" v-model:zoom="zoom" :center="[48.8566, 2.3522]" class="w-full h-full">
-                <l-tile-layer
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                  layer-type="base"
-                  name="OpenStreetMap"
-                ></l-tile-layer>
-              </l-map>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.157893100122!2d2.3121750967895545!3d48.874266500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f4c47058947%3A0xe1de61d4b89d1efb!2sSPHERE%20Restaurant%20Paris!5e0!3m2!1sfr!2sbj!4v1735543330807!5m2!1sfr!2sbj" width="600" height="450" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -120,10 +75,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
 
-import { LMap, LTileLayer } from '@vue-leaflet/vue-leaflet'
-const zoom = ref(2);
+
+
+import { MapPinIcon, EnvelopeIcon,PhoneIcon } from '@heroicons/vue/20/solid';
+
+
 </script>
 
 <style scoped>

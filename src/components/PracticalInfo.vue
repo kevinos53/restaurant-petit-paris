@@ -79,8 +79,8 @@
     </section>
   </template>
   
-  <script setup>
-  // Aucun script spécifique requis ici
+  <script setup   lang="ts">
+
   </script>
   
   <style scoped>
