@@ -6,7 +6,7 @@
       <div class="grid items-center grid-cols-1 gap-12 md:gap-16 lg:grid-cols-2">
         <!-- Colonne de gauche - Image -->
         <div class="relative animate-image">
-          <div class="relative aspect-w-16 aspect-h-9 md:aspect-h-6 lg:aspect-h-9 overflow-hidden group">
+          <div class="relative overflow-hidden aspect-w-16 aspect-h-9 md:aspect-h-6 lg:aspect-h-9 group">
             <img
               src="/images/cocktail-fire.jpg"
               alt="Cocktail flambé"
@@ -18,24 +18,30 @@
           </div>
         </div>
         <!-- Colonne de droite - Texte -->
-        <div class="space-y-6 md:space-y-8 text-white pl-0 md:pl-6">
-          <h2 class="text-4xl sm:text-5xl md:text-6xl font-light leading-tight animate-text">
+        <div class="pl-0 space-y-6 text-white md:space-y-8 md:pl-6">
+          <h2 class="text-4xl font-light leading-tight sm:text-5xl md:text-6xl animate-text">
             Notre Cuisine <br>
             <span class="font-script text-[#C17D5B]">Moléculaire</span>
           </h2>
 
-          <p class="text-lg sm:text-xl font-light leading-relaxed animate-text">
+          <p class="text-lg font-light leading-relaxed sm:text-xl animate-text">
             Le Petit Paris vous propose un concept unique en son genre, où nous excellons dans l'aventure culinaire
             et nous délectons de l'extraordinaire. Dévoués à faire progresser l'art et la pratique de l'hospitalité,
-            nous nous engageons à offrir une expérience véritablement unique, permettant à chaque visiteur de découvrir
-            un aperçu de notre paradis gastronomique moléculaire. Explorez notre site et nos menus, nous espérons vous
-            accueillir très prochainement dans notre établissement.
+            nous nous engageons à offrir une expérience véritablement unique.
           </p>
-          <router-link to="/menu">
-            <button class="inline-block px-8 sm:px-12 py-2 sm:py-3 text-base sm:text-lg tracking-wider transition-all duration-300 border-2 border-white animate-text hover:bg-white hover:text-black">
+
+          <p class="text-lg font-light leading-relaxed sm:text-xl animate-text">
+            Permettant à chaque visiteur de découvrir un aperçu de notre paradis gastronomique moléculaire. 
+            Explorez notre site et nos menus, nous espérons vous accueillir très prochainement dans notre établissement.
+          </p>
+         
+          <div>
+            <router-link to="/menu"    class="px-8 py-2 mt-6 text-base tracking-wider transition-all duration-300 border-2 border-white sm:px-12 sm:py-3 sm:text-lg hover:bg-white hover:text-black">
+
               DÉCOUVRIR
-            </button>
-          </router-link>
+
+           </router-link>
+          </div>
         </div>
       </div>
     </div>

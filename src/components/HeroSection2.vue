@@ -26,26 +26,28 @@
       >
         Une expérience gastronomique française authentique au cœur de la ville
       </p>
-      <div ref="buttons" class="space-x-4" style="opacity: 0; transform: translateY(50px)">
-        <router-link to="/reservation">
-          <button
-            class="px-8 py-3 text-white transition-colors rounded-md bg-amber-600 hover:bg-amber-700"
-          >
-            Réserver une table
-          </button>
+      <div
+        ref="buttons"
+        class="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
+        style="opacity: 0; transform: translateY(50px)"
+      >
+        <router-link
+          to="/reservation"
+          class="px-8 py-3 text-white transition-colors rounded-md bg-amber-600 hover:bg-amber-700"
+        >
+          Réserver une table
         </router-link>
-        <router-link to="/menu">
-          <button
-            class="px-8 py-3 text-white transition-colors border-2 border-white rounded-md hover:bg-white/10"
-          >
-            Voir le menu
-          </button>
+        <router-link
+          to="/menu"
+          class="px-8 py-3 text-white transition-colors border-2 border-white rounded-md hover:bg-white/10"
+        >
+          Voir le menu
         </router-link>
       </div>
     </div>
 
     <!-- Indicateur de défilement -->
-    <div class="absolute left-1/2 bottom-8 transform -translate-x-1/2 animate-bounce">
+    <div class="absolute transform -translate-x-1/2 left-1/2 bottom-8 animate-bounce">
       <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path
           stroke-linecap="round"

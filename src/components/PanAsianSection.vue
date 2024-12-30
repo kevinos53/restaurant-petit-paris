@@ -5,35 +5,38 @@
       <!-- Contenu principal -->
       <div class="grid items-center grid-cols-1 gap-12 md:gap-16 lg:grid-cols-2">
         <!-- Colonne de gauche - Texte -->
-        <div ref="textColumn" class="space-y-6 md:space-y-8 text-white pl-0 md:pl-6">
-          <h2 class="text-4xl sm:text-5xl md:text-6xl font-light leading-tight">
+        <div ref="textColumn" class="pl-0 space-y-6 text-white md:space-y-8 md:pl-6">
+          <h2 class="text-4xl font-light leading-tight sm:text-5xl md:text-6xl">
             <span class="block">Une Cuisine Pour Tous</span>
             <span class="block mt-2 font-script text-[#C17D5B]">Gastronomie Française</span>
           </h2>
 
-          <p class="text-lg sm:text-xl font-light leading-relaxed">
+          <p class="text-lg font-light leading-relaxed sm:text-xl">
             Le Petit Paris est fier de vous proposer une cuisine française authentique et raffinée.
             Des amuse-bouches aux entrées, en passant par nos salades, plats principaux et desserts,
             notre menu saura satisfaire toutes les envies, quels que soient vos goûts ou votre appétit.
           </p>
 
-          <p class="text-lg sm:text-xl font-light leading-relaxed">
+          <p class="text-lg font-light leading-relaxed sm:text-xl">
             Avec notre sélection exceptionnelle et nos recettes traditionnelles, nous servons
             une des meilleures cuisines françaises de la région. Découvrez la gastronomie française
             comme elle se doit d'être savourée, au Petit Paris.
           </p>
 
-          <button
-            class="px-8 sm:px-12 py-2 sm:py-3 text-base sm:text-lg tracking-wider transition-all duration-300 border-2 border-white hover:bg-white hover:text-black"
-          >
-            RÉSERVER
-          </button>
+         
+          <div>
+            <router-link to="/reservation"    class="px-8 py-2 mt-6 text-base tracking-wider transition-all duration-300 border-2 border-white sm:px-12 sm:py-3 sm:text-lg hover:bg-white hover:text-black">
+
+              RÉSERVER
+
+</router-link>
+          </div>
         </div>
 
         <!-- Colonne de droite - Image -->
         <div ref="imageColumn" class="relative">
           <div
-            class="relative aspect-w-16 aspect-h-9 md:aspect-h-6 lg:aspect-h-9 overflow-hidden group"
+            class="relative overflow-hidden aspect-w-16 aspect-h-9 md:aspect-h-6 lg:aspect-h-9 group"
           >
             <img
               src="/images/coq-au-vin.jpg"

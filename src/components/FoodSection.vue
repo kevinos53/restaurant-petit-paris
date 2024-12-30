@@ -4,38 +4,38 @@
       <!-- Contenu principal -->
       <div class="grid items-center grid-cols-1 gap-12 md:gap-16 lg:grid-cols-2">
         <!-- Colonne de gauche - Texte -->
-        <div ref="textColumn" class="space-y-6 md:space-y-8 text-white pl-0 md:pl-6">
-          <h2 class="text-4xl sm:text-5xl md:text-6xl font-light leading-tight">
+        <div ref="textColumn" class="pl-0 space-y-6 text-white md:space-y-8 md:pl-6">
+          <h2 class="text-4xl font-light leading-tight sm:text-5xl md:text-6xl">
             Menu de <span class="font-script text-[#C17D5B]">Noël</span>
           </h2>
 
-          <p class="text-lg sm:text-xl font-light leading-relaxed">
+          <p class="text-lg font-light leading-relaxed sm:text-xl">
             La saison des fêtes approche à grands pas. Célébrez avec magie, saveurs et cocktails
             extraordinaires. Un dîner intime en tête à tête ? Nous avons le coin tranquille qui vous
             attend. Une grande fête de Noël inoubliable ? Pensez à privatiser Le Petit Paris pour
             votre événement.
           </p>
 
-          <p class="text-lg sm:text-xl font-light leading-relaxed">
+          <p class="text-lg font-light leading-relaxed sm:text-xl">
             Nous vous proposons des saveurs exquises à travers notre cuisine française raffinée avec
             des menus fixes et des banquets adaptés à tous les goûts, accompagnés des meilleurs
             cocktails de la ville.
           </p>
 
-          <p class="text-xl sm:text-2xl font-light">À très bientôt chez nous.</p>
-          <router-link to="/menu">
-            <button
-              class="px-8 sm:px-12 py-2 sm:py-3 text-base sm:text-lg tracking-wider transition-all duration-300 border-2 border-white hover:bg-white hover:text-black"
-            >
-              MENU DE NOËL
-            </button>
-          </router-link>
+          <p class="text-xl font-light sm:text-2xl">À très bientôt chez nous.</p>
+          <div>
+            <router-link to="/menu"    class="px-8 py-2 mt-6 text-base tracking-wider transition-all duration-300 border-2 border-white sm:px-12 sm:py-3 sm:text-lg hover:bg-white hover:text-black">
+
+MENU DE NOËL
+
+</router-link>
+          </div>
         </div>
 
         <!-- Colonne de droite - Image -->
         <div ref="imageColumn" class="relative">
           <div
-            class="relative aspect-w-16 aspect-h-9 md:aspect-h-6 lg:aspect-h-9 overflow-hidden group"
+            class="relative overflow-hidden aspect-w-16 aspect-h-9 md:aspect-h-6 lg:aspect-h-9 group"
           >
             <img
               src="/images/curry-dish.jpg"

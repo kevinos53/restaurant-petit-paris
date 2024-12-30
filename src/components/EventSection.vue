@@ -1,41 +1,41 @@
-
 <template>
   <section class="relative bg-[#1A1A1A] min-h-screen px-6 sm:px-10 md:px-0 py-12 md:py-0">
     <div class="w-full">
       <!-- Contenu principal -->
       <div class="grid items-center grid-cols-1 gap-12 md:gap-16 lg:grid-cols-2">
         <!-- Colonne de gauche - Texte -->
-        <div ref="textColumn" class="space-y-6 md:space-y-8 text-white pl-0 md:pl-6">
-          <h2 class="text-4xl sm:text-5xl md:text-6xl font-light leading-tight">
+        <div ref="textColumn" class="pl-0 space-y-6 text-white md:space-y-8 md:pl-6">
+          <h2 class="text-4xl font-light leading-tight sm:text-5xl md:text-6xl">
             <span class="block">Organisez Votre</span>
             <span class="font-script text-[#C17D5B] block mt-2">Événement Privé</span>
           </h2>
 
-          <p class="text-lg sm:text-xl font-light leading-relaxed">
-            Au Petit Paris, nous comprenons l'importance d'organiser un événement
-            mémorable. Notre équipe dédiée vous accompagne dans la création de moments
-            uniques, qu'il s'agisse d'un dîner intime, d'une célébration d'entreprise
-            ou d'une occasion spéciale.
+          <p class="text-lg font-light leading-relaxed sm:text-xl">
+            Au Petit Paris, nous comprenons l'importance d'organiser un événement mémorable. Notre
+            équipe dédiée vous accompagne dans la création de moments uniques, qu'il s'agisse d'un
+            dîner intime, d'une célébration d'entreprise ou d'une occasion spéciale.
           </p>
 
-          <p class="text-lg sm:text-xl font-light leading-relaxed">
-            Notre espace élégant, notre cuisine raffinée et notre service attentionné
-            s'unissent pour créer une expérience inoubliable. Laissez-nous transformer
-            votre vision en réalité dans notre cadre parisien enchanteur.
+          <p class="text-lg font-light leading-relaxed sm:text-xl">
+            Notre espace élégant, notre cuisine raffinée et notre service attentionné s'unissent
+            pour créer une expérience inoubliable. Laissez-nous transformer votre vision en réalité
+            dans notre cadre parisien enchanteur.
           </p>
-          <router-link to="/reservation">
-            <button
-              class="px-8 sm:px-12 py-2 sm:py-3 text-base sm:text-lg tracking-wider transition-all duration-300 border-2 border-white hover:bg-white hover:text-black"
+
+          <div>
+            <router-link
+              to="/reservation"
+              class="px-8 py-2 mt-6 text-base tracking-wider transition-all duration-300 border-2 border-white sm:px-12 sm:py-3 sm:text-lg hover:bg-white hover:text-black"
             >
               RÉSERVER VOTRE ÉVÉNEMENT
-            </button>
-          </router-link>
+            </router-link>
+          </div>
         </div>
 
         <!-- Colonne de droite - Image -->
         <div ref="imageColumn" class="relative">
           <div
-            class="relative aspect-w-16 aspect-h-9 md:aspect-h-6 lg:aspect-h-9 overflow-hidden group"
+            class="relative overflow-hidden aspect-w-16 aspect-h-9 md:aspect-h-6 lg:aspect-h-9 group"
           >
             <img
               src="/images/event-space.jpg"
@@ -122,24 +122,31 @@ onMounted(() => {
 }
 </style>
 
-  <style scoped>
-  .font-script {
-    font-family: 'Dancing Script', cursive;
-  }
+<style scoped>
+.font-script {
+  font-family: 'Dancing Script', cursive;
+}
 
-  /* Effet de particules/bokeh */
-  .animate-image::before {
-    content: '';
-    position: absolute;
-    /* inset: -50%; */
-    background: radial-gradient(circle at center, #FF6B6B 0%, #4ECDC4 100%);
+/* Effet de particules/bokeh */
+.animate-image::before {
+  content: '';
+  position: absolute;
+  /* inset: -50%; */
+  background: radial-gradient(circle at center, #ff6b6b 0%, #4ecdc4 100%);
+  opacity: 0.1;
+  filter: blur(100px);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
     opacity: 0.1;
-    filter: blur(100px);
-    animation: pulse 4s ease-in-out infinite;
   }
-
-  @keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 0.1; }
-    50% { transform: scale(1.1); opacity: 0.2; }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.2;
   }
-  </style>
+}
+</style>

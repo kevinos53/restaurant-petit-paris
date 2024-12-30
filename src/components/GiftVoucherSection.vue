@@ -8,7 +8,7 @@
         <!-- Colonne de gauche - Image -->
         <div ref="imageSection" class="relative order-last md:order-first">
           <div
-            class="relative aspect-w-16 aspect-h-9 md:aspect-h-6 lg:aspect-h-9 overflow-hidden group"
+            class="relative overflow-hidden aspect-w-16 aspect-h-9 md:aspect-h-6 lg:aspect-h-9 group"
           >
             <img
               src="/images/restaurant-facade.jpg"
@@ -22,35 +22,38 @@
         </div>
 
         <!-- Colonne de droite - Texte -->
-        <div ref="textSection" class="space-y-6 md:space-y-8 text-white pl-0 md:pl-6 order-first md:order-last">
-          <div>
-            <h2 class="text-4xl sm:text-5xl md:text-6xl font-light leading-tight">
+        <div ref="textSection" class="order-first pl-0 space-y-6 text-white md:space-y-8 md:pl-6 md:order-last">
+         
+            <h2 class="text-4xl font-light leading-tight sm:text-5xl md:text-6xl">
               <span class="block">Offrez un Moment d'Exception avec Nos</span>
               <span class="block mt-2 font-script text-[#C17D5B]">Cartes Cadeaux</span>
             </h2>
 
-            <p class="text-lg sm:text-xl font-light leading-relaxed">
+            <p class="text-lg font-light leading-relaxed sm:text-xl">
               Offrez une expérience gastronomique inoubliable à vos proches. Avec nos trois
               formules de cartes cadeaux à différents prix, permettez à vos êtres chers de
               découvrir notre brunch raffiné ou de savourer une authentique cuisine française
               dans l'un des meilleurs restaurants gastronomiques de la région.
             </p>
 
-            <p class="text-lg sm:text-xl font-light leading-relaxed">
+            <p class="text-lg font-light leading-relaxed sm:text-xl">
               Vous pouvez également offrir à vos amis et votre famille notre masterclass cocktails.
               Nous proposons deux formules distinctes, comprenant chacune un cocktail de bienvenue
               et la création de trois cocktails signatures. L'une des formules inclut également
               une sélection de nos délicieuses planches à partager.
             </p>
-            <router-link to="/menu">
-              <button
-                class="px-8 sm:px-12 py-2 sm:py-3 text-base sm:text-lg tracking-wider transition-all duration-300 border-2 border-white hover:bg-white hover:text-black"
-              >
-                ACHETER UNE CARTE CADEAU
-              </button>
+            <div>
+            <router-link
+              to="/menu"
+              class="px-8 py-2 mt-6 text-base tracking-wider transition-all duration-300 border-2 border-white sm:px-12 sm:py-3 sm:text-lg hover:bg-white hover:text-black"
+            >
+            ACHETER UNE CARTE CADEAU
             </router-link>
           </div>
-        </div>
+           
+          </div>
+         
+        
       </div>
     </div>
   </section>
